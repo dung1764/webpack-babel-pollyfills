@@ -9,4 +9,23 @@ Babel is a free and open-source JavaScript transcompiler that is mainly used to 
 # pollyfills (javascript api)
 A polyfill is code that implements a feature on web browsers that do not support the feature. Most often, it refers to a JavaScript library that implements an HTML5 web standard, either an established standard (supported by some browsers) on older browsers, or a proposed standard (not supported by any browsers) on existing browsers.
 
+# babel/preset-env
+In this example, we use @babel/preset-env and corejs instead of pollyfills
 
+# browserslist
+You can add browserslist to .browserslistrc config :
+```json
+defaults
+not IE 11
+not IE_Mob 11
+maintained node versions
+```
+Or package.json :
+```json
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
+```
